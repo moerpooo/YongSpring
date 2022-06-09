@@ -12,6 +12,6 @@ public class Test {
     public static void main(String[] args) {
         YongApplicationContext applicationContext = new YongApplicationContext(AppConfig.class);
 
-        UserService userService= (UserService) applicationContext.getBean("userService");
+        System.out.println(applicationContext.getBean("userService"));
     }
 }
